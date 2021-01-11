@@ -1,0 +1,171 @@
+/* 
+This CSS file provides formatting for my course pages
+Author: Elena Machkasova
+Created: 1/2/2007
+*/
+
+/*
+to-do:
+- make list bullets green? Think of lists in resources. 
+- footer formatting
+*/
+
+/* GENERAL SETTINGS */
+
+body {
+	background-color: #FFFFFF;
+	font-family: arial, sans-serif;
+}
+
+/* named headers are headers, not links */
+h1, h2, h3, h3 a.named, h3 a.named:visited, h3 a.named:hover {
+	font-family: verdana, sans-serif;
+	color: 	#000000;
+	background-color: #F4A460; /* SandyBrown   */		
+}
+
+h4, h5, h6,  h4 a.named, h4 a.named:visited, h4 a.named:hover {
+	font-family: verdana, sans-serif;
+	color: #CD853F; /* Peru, slightly darker than SandyBrown  */
+}
+
+code {
+	font-size: larger;
+}
+
+/* e-mail looks like a link, but not underlined */
+a, .email {
+	font-family: verdana, sans-serif;
+	color: #2E8B57; /* SeaGreen */
+}
+
+a:visited {
+	color: 	#008080; /* Teal */
+} 
+
+a:hover {
+	color: #2F4F4F; /* DarkSlateGrey  */
+}
+
+/* TABLES WITH AND WITHOUT A BORDER */
+
+table {
+	border-collapse: collapse; /* merges borders for cells */
+}
+
+table.with_border td {
+	border:  #2E8B57 solid thin; /* SeaGreen */
+	white-space: nowrap;
+}
+
+table.noborder td {
+	border-style: none;
+	text-align: left;
+}
+
+/* FORMATTING NOTES THAT NEED TO STAND OUT */
+.standout { 
+	color: #B22222; /* FireBrick */	
+        font-size: 120%;
+}
+
+/* FORMATTING FOR A SYLLABUS TABLE */
+
+/* inherits collapsed border style from table */
+table.syllabus {
+	width: 100%;
+}
+
+table.syllabus th {
+	background-color: #F4A460; /* SandyBrown   */	
+}
+
+/* reverse colors for top-level syllabus header */
+table.syllabus th.toplevel {
+	background-color: #404040; /* dark grey - black didn't look good */
+	color: #F4A460; /* SandyBrown   */	
+}
+
+table.syllabus th, td {
+	border: #000000 solid thin;
+}
+
+table.syllabus th {
+	text-align: center;
+}
+
+table.syllabus td {
+	text-align: left;
+}
+
+/* three-column syllabus */
+th.three {
+	width: 33%;
+}
+
+/* two-column syllabus */
+th.two {
+	width: 50%;
+}
+
+/* four-column syllabus */
+th.four {
+	width: 25%;
+}
+
+/* a class to mark an assigned problem set */
+.assign {
+	color: #2E8B57; /* SeaGreen */
+}
+
+/* a class to mark an assignment that's due */
+.due {
+	color: #B22222 /* FireBrick */	
+}
+
+/* a class to mark something new on a page */
+.new {
+	color: #B22222 /* FireBrick */	
+}
+
+/* a class to mark a day off */
+.vacation, table.syllabus th.vacation {
+	background-color: #AFEEEE; /* PaleTurquoise  */	
+}
+
+/* a class to mark a test date */
+.test {
+	background-color: #00FA9A /* MediumSpringGreen  */
+}
+
+/* a class for a final or a final project due */
+.final, table.syllabus td.final {
+	font-weight: bold;
+	text-align: center;
+	background-color: #00FA9A /* MediumSpringGreen  */
+}
+
+/* a class to mark a lab day */
+.lab {
+	background-color: #FFFF66; /* light yellow*/
+}
+
+.req {
+       background-color:  #7FFFD4; /* Aquamarine  */
+}
+.inclass {
+       background-color:  #FFA07A; /* LightSalmon */
+}
+
+
+/* SPECIAL ELEMENTS OF A PAGE */
+
+.disclaimer {
+	font-size: smaller;
+	border-top: #F4A460 solid thin;  /* SandyBrown   */
+}
+
+#footer {
+	border: #2E8B57 solid thin; /* SeaGreen */
+}
+

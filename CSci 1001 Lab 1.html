@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0063)http://cda.morris.umn.edu/~elenam/1001_spring09/psets/lab1.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>CSci 1001 Lab 1</title>
+<link rel="stylesheet" type="text/css" href="./CSci 1001 Lab 1_files/course_style.css">
+</head>
+<body>
+<h2>CSci 1001 Lab 1</h2>
+
+<h3>Creating a simple web page</h3>
+
+<p>In this lab you will write a simple web page. Mor specifically, you
+need to do the following:</p>  
+<ol>
+<li>Start jEdit (go to  <code>Start -&gt; All Programs -&gt;
+jEdit4.2</code>, and choose jEdit)
+</li>
+<li>Open a new file. Save it on the
+Desktop (go to Save As) as <code>mypage.html</code></li>
+<li>Copy the following header code into your page:
+<pre><code>
+&lt;!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+&lt;!--
+Put author information here
+--&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html;charset=utf-8" /&gt;
+&lt;title&gt;
+
+Your title goes here
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</code></pre>
+Add the closing <code>body</code> and <code>html</code> tags. Save the file. 
+</li>
+<li>Open <a href="http://cda.morris.umn.edu/~elenam/1001_spring09/examples/first_page.html">this
+page</a> in another browser tab (right-click on the link and then
+choose "Open Link in New Tab") and use it as an example. Go to View -&gt;  
+Page Source to see the html source.</li> 
+<li>In the browser window open another tab, go to File  -&gt; Open File,
+navigate to Desktop, and open mypage.html. It doesn't have anything in
+it yet, but it should show the title.</li>
+<li>In yet another tab open the <a href="http://validator.w3.org/">XHTML validator</a>. Go to "validate
+by File uploading" and browse to your file. If there are any errors,
+please correct them, save the file and revalidate. </li>  
+<li>One by one add the features listed below to your page. Save the
+file after each change, reload it in the browser (click the cicrle
+arrow in the browser toolbar) and check it using 
+the validator. When you are adding HTML elements, make sure to add the
+opening and closing tags first, and then put the text in between
+them. <br>
+The contents of your page doesn't matter - add any random text. 
+<br>
+Here is the list of features that you need to add to your page:
+<ol>
+<li>A header</li>
+<li>A paragraph with at least one other element (such as
+<code>cite</code>, 
+<code>dfn</code>, etc.) included in it. </li>
+<li>A list with at least two items.</li>
+<li>A link to any other web site (UMM web site or weather.com is
+fine). Click on the link to make sure that it works.</li> 
+<li>A horizontal rule <code>&lt;hr /&gt;</code> (note that it is a
+self-closing tag)</li>
+<li>An image. You can add an image in one of two ways:
+<ul>
+<li>
+Copy an image from any web page: right-click on it, choose "Save Image as", 
+and save it on Desktop. Then include it into
+the page using <code>&lt;img&gt;</code> tag. Use the example web page
+as a sample (however, you don't have the <code>images</code> folder,
+so include just the file name, not the folder name). 
+</li>
+<li>Use a link to an image on another web site. To do this, right-click on the 
+image and choose "Copy Image Location". Paste the location as the value of the 
+<code>src</code> attribute in the <code>img</code> tag</li>
+</ul>
+Make sure to add the <code>alt</code>
+attribute. 
+</li>
+</ol>
+</li>
+</ol>
+
+<h3>Adding CSS features</h3>
+<p>For this part of the lab you need to add a CSS file to set simple
+properties of some elements in your web page. Use <a href="http://cda.morris.umn.edu/~elenam/1001_spring09/examples/first_page2.html">this 
+page</a> and <a href="http://cda.morris.umn.edu/~elenam/1001_spring09/examples/first_style.css">this
+CSS file</a> as an example.</p>
+
+<p>Your task is as follows:</p>
+<ul>
+<li>Open a new file <code>lab1.css</code> and save it next to your
+HTML file.</li>
+<li>In your HTML file add a line
+<pre><code>
+&lt;link rel="stylesheet" type="text/css" href="lab1.css" /&gt;
+</code></pre>
+right before the closing <code>&lt;/head&gt;</code> tag. Save the html
+file, re-validate it to make sure that you added the line correctly.  
+</li>
+<li>
+Add the following to your CSS file, saving it and reloading the page
+in the browser after every change: 
+<ul>
+<li>Set the text color and the background color of the entire page 
+by setting properties of <code>body</code> tag in the CSS file (see 
+the example given in class). You might want to look up color values 
+<a href="http://www.w3schools.com/css/css_colornames.asp">here</a>.
+<br>
+Save the CSS file, repload the page, and make sure that the colors 
+appear. Also upload your CSS file to the <a href="http://jigsaw.w3.org/css-validator/#validate_by_upload">CSS 
+validator</a> to make sure thta it is correct. Repeat these steps with 
+every addition to the CSS file. 
+</li> 
+<li>
+Set a different color for the header and one other tag in your page 
+in one css 
+declaration. For instance, if you are setting a property for 
+<code>h1</code> and <code>em</code>, you write <code>h1, em</code> 
+in CSS and then set the property. 
+</li>
+<li>
+Set a border property for an image. Border properties are listed 
+<a href="http://www.w3schools.com/css/css_border.asp">here</a>. Try 
+a different style then the one given in the in-class example (for instance, 
+a dashed border instead of a double one). 
+</li>
+</ul>
+</li>
+</ul>
+<!-- <p>TBA</p> -->
+
+
+<h3>At the end of the lab</h3>
+<ul>
+<li>Send your HTML and CSS files by e-mail to me <span class="email">elenam at 
+morris.umn.edu</span> and to yourself. Please attach images if you
+downloaded  
+them to the Desktop. In your e-mail please note whether your work is
+finished.</li> 
+<li>If you are not finished with all tasks, you may continue working
+on the lab at home. In this case please submit it with the problem
+set.</li> 
+</ul>
+
+<hr>
+
+<p>
+This page is a part of <a href="http://cda.morris.umn.edu/~elenam/1001_spring09/index.html">CSci 1001
+course web site</a>.
+
+</p>
+
+</body></html>
